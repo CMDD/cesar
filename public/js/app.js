@@ -1783,6 +1783,24 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -37234,9 +37252,18 @@ var staticRenderFns = [
           _c("span", { staticClass: "email" }, [_vm._v("johndg10@gmail.com")]),
           _c("span", { staticClass: "pass" }, [_vm._v("password")]),
           _c("span", { staticClass: "buttons" }, [
-            _c("a", { staticClass: "edit", attrs: { href: "#" } }, [
-              _vm._v("Editar")
-            ]),
+            _c(
+              "a",
+              {
+                staticClass: "edit",
+                attrs: {
+                  href: "#",
+                  "data-toggle": "modal",
+                  "data-target": "#exampleModal"
+                }
+              },
+              [_vm._v("Editar")]
+            ),
             _vm._v(" | "),
             _c("a", { staticClass: "delete", attrs: { href: "#" } }, [
               _vm._v("Eliminar")
@@ -37244,9 +37271,18 @@ var staticRenderFns = [
           ])
         ]),
         _vm._v(" "),
-        _c("a", { staticClass: "btn add", attrs: { href: "#" } }, [
-          _vm._v("Agregar")
-        ]),
+        _c(
+          "a",
+          {
+            staticClass: "btn add",
+            attrs: {
+              href: "#",
+              "data-toggle": "modal",
+              "data-target": "#exampleModal"
+            }
+          },
+          [_vm._v("Agregar")]
+        ),
         _vm._v(" "),
         _c("div", { staticClass: "pag" }, [
           _c("a", { attrs: { href: "#" } }, [_vm._v("1")]),
@@ -37254,7 +37290,78 @@ var staticRenderFns = [
           _c("a", { attrs: { href: "#" } }, [_vm._v("3")]),
           _c("a", { attrs: { href: "#" } }, [_vm._v("4")])
         ])
-      ])
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "modal fade",
+          attrs: {
+            id: "exampleModal",
+            tabindex: "-1",
+            role: "dialog",
+            "aria-labelledby": "exampleModalLabel",
+            "aria-hidden": "true"
+          }
+        },
+        [
+          _c(
+            "div",
+            { staticClass: "modal-dialog", attrs: { role: "document" } },
+            [
+              _c("div", { staticClass: "modal-content" }, [
+                _c("div", { staticClass: "modal-header" }, [
+                  _c(
+                    "h5",
+                    {
+                      staticClass: "modal-title",
+                      attrs: { id: "exampleModalLabel" }
+                    },
+                    [_vm._v("Usuario")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "close",
+                      attrs: {
+                        type: "button",
+                        "data-dismiss": "modal",
+                        "aria-label": "Close"
+                      }
+                    },
+                    [
+                      _c("span", { attrs: { "aria-hidden": "true" } }, [
+                        _vm._v("×")
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "modal-body" }, [
+                  _c("form", [
+                    _c("input", {
+                      staticClass: "form-control mb-3",
+                      attrs: { type: "text", placeholder: "E-mail" }
+                    }),
+                    _vm._v(" "),
+                    _c("input", {
+                      staticClass: "form-control mb-3",
+                      attrs: { type: "text", placeholder: "Contraseña" }
+                    }),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      { staticClass: "btn", attrs: { type: "submit" } },
+                      [_vm._v("Guardar")]
+                    )
+                  ])
+                ])
+              ])
+            ]
+          )
+        ]
+      )
     ])
   }
 ]
@@ -50004,8 +50111,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/jhonalvaroangulorojano/3angles/cesar/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/jhonalvaroangulorojano/3angles/cesar/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/desarrollo/Desktop/3angles/cesar/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/desarrollo/Desktop/3angles/cesar/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
