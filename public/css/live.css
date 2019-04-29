@@ -1,0 +1,169 @@
+body {
+    background: #f2f2f2;
+}
+
+.black {
+    background: #292a27;
+    margin-bottom: 100px;
+}
+
+.wrapper {
+    position: relative;
+    width:100%;
+    max-width: 900px;
+    margin: 0 auto -100px auto;
+    color: #fff;
+}
+.box-video {
+    position:relative;
+    height:0px;
+    width:100%;
+    padding-top:56.25%;
+}
+#player {
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+}
+
+.blocker, .blocker .cover {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.blocker .cover {
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+}
+.blocker.paused .cover {
+    background-color: rgb(0, 0, 0);
+    opacity: 1;
+}
+.blocker.playing.init .cover {
+    -webkit-transition: all .3s ease 3s;
+            transition: all .3s ease 3s;
+}
+.blocker.playing .cover {
+    -webkit-transition: all .3s ease 1s;
+            transition: all .3s ease 1s;
+}
+
+.blocker .playpause {
+    position: absolute;
+    z-index: 10;
+    display: block;
+    top: 50%;
+    margin-top: -25px;
+    left: 50%;
+    margin-left: -25px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-size: contain;
+    background-position: center;
+    -webkit-transition: all .3s ease;
+            transition: all .3s ease;
+}
+.blocker.playing.init .playpause {
+    background-image: url("../img/loading.gif");
+}
+.blocker.paused .playpause {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' fill='%23ffffff'%3E%3Cpath d='M256,0C114.617,0,0,114.615,0,256s114.617,256,256,256s256-114.615,256-256S397.383,0,256,0z M344.48,269.57l-128,80 c-2.59,1.617-5.535,2.43-8.48,2.43c-2.668,0-5.34-0.664-7.758-2.008C195.156,347.172,192,341.82,192,336V176 c0-5.82,3.156-11.172,8.242-13.992c5.086-2.836,11.305-2.664,16.238,0.422l128,80c4.676,2.93,7.52,8.055,7.52,13.57 S349.156,266.641,344.48,269.57z'/%3E%3C/svg%3E");
+}
+.blocker.playing:not(.init) .playpause {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 510 510' style='enable-background:new 0 0 510 510;' fill='%23ffffff'%3E%3Cpath d='M255,0C114.75,0,0,114.75,0,255s114.75,255,255,255s255-114.75,255-255S395.25,0,255,0z M229.5,357h-51V153h51V357z M331.5,357h-51V153h51V357z'/%3E%3C/svg%3E");
+    opacity: 0;
+}
+.blocker.playing:hover .playpause {
+    opacity: 1;
+}
+
+.comments h3 {
+    text-align: center;
+    margin: 40px 0;
+}
+.comments .box {
+    max-width: 900px;
+    margin: auto;
+}
+.comments textarea {
+    margin-bottom: 20px;
+}
+.comments button {
+    display: block;
+    margin: 0 0 0 auto;
+}
+.comments .list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #ced4da;
+}
+.comments .list >li {
+    border-top: 1px solid #ced4da;
+    margin-top: 30px;
+}
+.comments .list ul {
+    list-style: none;
+    padding-left: 60px;
+}
+.comments .text {
+    display: flex;
+    margin: 30px 0;
+}
+.comments .user {
+    flex: 0 0 auto;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #de1314;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    margin-right: 20px;
+}
+.comments p {
+    flex: 1;
+    margin: 0;
+}
+.comments .buttons {
+    flex: 0 0 auto;
+    font-size: .8rem;
+    text-align: right;
+    margin-left: 20px;
+}
+.comments .buttons a {
+    display: block;
+}
+.comments .reply-form {
+    margin-bottom: 30px;
+    text-align: right;
+}
+.comments .reply-form .btn {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: .9rem;
+}
+
+.footer {
+    color: #212529;
+}
+.footer span {
+    margin-right: 20px;
+}
+.footer svg {
+    fill:#212529;
+}
+.footer a:hover svg {
+    fill:#5a5a5a;
+}
